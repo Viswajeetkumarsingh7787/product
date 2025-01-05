@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop your favourite Footwear on maximum discount</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/product/index.html"><img src="https://i.postimg.cc/J4H3Ttv8/Screenshot-2025-01-04-230524.png" alt="Shoes Store" width="180px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="/product/index.html">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="/product/about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+          <img src="https:///i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+      <!-- nav end -->
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Shoes STORE - About Us</title>
+<style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  
+  nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  p {
+    color: #555;
+  }
+  /* footer */
+  
+  .footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+  }
+  
+  .footer p {
+    color: #8a8a8a;
+  }
+  
+  .footer h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col-1 {
+    flex-basis: 30%;
+  }
+  
+  .footer-col-2 {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col-3,
+  .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .app-logo {
+    margin-top: 20px;
+  }
+  .app-logo img {
+    width: 140px;
+  }
+  
+  .footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  .menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+  
+  /* media query for menu */
+  
+  @media only screen and (max-width: 800px) {
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      color: #fff;
+    }
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  /* all products page */
+  
+  .row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+  }
+  
+  select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  .page-btn {
+    margin: 0 auto 80px;
+  }
+  
+  .page-btn span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .page-btn span:hover {
+    background: #ff523b;
+    color: #ffffff;
+  }
+  .btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #ffffff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+  }
+  
+  .btn:hover {
+    background: #563434;
+  }
+  
+  .header {
+    background: radial-gradient(#fff, #ffd6d6);
+  }
+  
+  .header .row {
+    margin-top: 70px;
+  }
+  /* single product details */
+  
+  .single-product {
+    margin-top: 80px;
+  }
+  
+  .single-product .col-2 img {
+    padding: 0;
+  }
+  
+  .single-product .col-2 {
+    padding: 20px;
+  }
+  
+  .single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .single-product .fas {
+    color: #ff523b;
+    margin-left: 10px;
+  }
+  
+  .small-img-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+  }
+  
+  /* cart items */
+  
+  .cart-page {
+    margin: 90px auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  th {
+    text-align: left;
+    padding: 5px;
+    color: #ffffff;
+    background: #ff523b;
+    font-weight: normal;
+  }
+  td {
+    padding: 10px 5px;
+  }
+  
+  td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+  }
+  
+  td a {
+    color: #ff523b;
+    font-size: 12px;
+  }
+  
+  td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .total-price {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  td:last-child {
+    text-align: right;
+  }
+  
+  th:last-child {
+    text-align: right;
+  }
+  /* account page */
+  .account-page {
+    padding: 50px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+  }
+  
+  .form-container {
+    background: #ffffff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+  }
+  
+  .form-btn {
+    display: inline-block;
+  }
+  
+  .form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+  }
+  
+  form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+  }
+  
+  form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  form .btn:focus {
+    outline: none;
+  }
+  
+  #LoginForm {
+    left: -300px;
+  }
+  
+  #RegForm {
+    left: 0;
+  }
+  
+  form a {
+    font-size: 12px;
+  }
+  
+  #Indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+  }
+  
+  /* media query for less than 600 screen size */
+  
+  @media only screen and (max-width: 600px) {
+    .row {
+      text-align: center;
+    }
+    .col-2,
+    .col-3,
+    .col-4 {
+      flex-basis: 100%;
+    }
+  
+    .single-product .row {
+      text-align: left;
+    }
+  
+    .single-product .col-2 {
+      padding: 20px 0;
+    }
+    .single-product h1 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    .cart-info p {
+      display: none;
+    }
+  }
+
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+              * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                  font-family: Arial, sans-serif;
+              }
+      
+              .breadcrumb {
+                  padding: 20px 40px;
+              }
+      
+              .breadcrumb a {
+                  color: #666;
+                  text-decoration: none;
+              }
+      
+              .container {
+                  max-width: 1200px;
+                  margin: 0 auto;
+                  padding: 20px;
+              }
+      
+              h1 {
+                  text-align: center;
+                  margin-bottom: 40px;
+                  font-size: 32px;
+              }
+      
+              .about-content {
+                  display: grid;
+                  grid-template-columns: 1fr 2fr 1fr;
+                  gap: 30px;
+                  margin-bottom: 50px;
+              }
+      
+              .about-image {
+                  width: 100%;
+                  height: auto;
+              }
+      
+              .about-text {
+                  text-align: center;
+                  line-height: 1.6;
+              }
+      
+              .about-text p {
+                  margin-bottom: 20px;
+                  color: #444;
+              }
+      
+              .features {
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  gap: 20px;
+                  padding: 40px 0;
+                  background-color: #f9f9f9;
+              }
+      
+              .feature {
+                  text-align: center;
+                  padding: 20px;
+              }
+      
+              .feature-icon {
+                  font-size: 24px;
+                  margin-bottom: 15px;
+              }
+      
+              .feature-title {
+                  font-weight: bold;
+                  color: #333;
+                  margin-bottom: 10px;
+              }
+      
+              .feature-text {
+                  font-size: 14px;
+                  color: #666;
+                  line-height: 1.4;
+              }
+      
+              .brand-highlight {
+                  font-weight: bold;
+                  color: #333;
+              }
+      
+              .whatsapp-button {
+                  display: inline-flex;
+                  align-items: center;
+                  background-color: #25D366;
+                  color: white;
+                  padding: 8px 15px;
+                  border-radius: 5px;
+                  text-decoration: none;
+              }
+      
+              @media (max-width: 768px) {
+                  .about-content {
+                      grid-template-columns: 1fr;
+                  }
+      
+                  .features {
+                      grid-template-columns: 1fr 1fr;
+                  }
+              }
+      
+              @media (max-width: 480px) {
+                  .features {
+                      grid-template-columns: 1fr;
+                  }
+              }
+          </style>
+      </head>
+      <body>
+          <div class="breadcrumb">
+              <a href="/">Home</a> > About Us
+          </div>
+      
+          <div class="container">
+              <h1>ABOUT US</h1>
+      
+              <div class="about-content">
+                  <img src="https://i.postimg.cc/fRYsCNfg/cb3phjln.png" alt="Shoes" class="about-image">
+                  
+                  <div class="about-text">
+                      <p>SHOESTORE</p>
+                      
+                      <p>In the year of liberation, 1999, a lone shoe store opened its doors to the public in Colaba, Mumbai. shoes Shoes, the brand, is now a household name in India. Over the past seven decades, the company and the brand have become synonymous with unmatched quality, skilled craftsmanship and high-fashion products in the footwear industry.  <span class="brand-highlight"> SHOE STORE !</span></p>
+                      
+                      <p>To be the number one brand in the footwear and accessories market and to be recognized as a prestigious company through focused business development, differentiation through innovation, passion through empowerment, and cost reduction through economies of scale and world class systems and procedures.</p>
+                      
+                      <p>Join us on this journey of self-discovery and rebellion. Embrace your style and make a statement with <span class="brand-highlight"> SHOESTORE </span>. Explore our collections and find the perfect pieces that reflect your unique identity.</p>
+                      
+                      <p>Be Bold, Be SHOES STORE . Welcome to <span class="brand-highlight"> SHOESTORE !</span></p>
+                  </div>
+      
+                  <img src="https://i.postimg.cc/ZqZSDMfY/fxrn37gk.png" alt="shoes on rack" class="about-image">
+              </div>
+      
+              <div class="features">
+                  <div class="feature">
+                      <div class="feature-icon">🌏</div>
+                      <div class="feature-title">ALL OVER INDIA DELIVERY</div>
+                      <div class="feature-text">We deliver your favorite product in all over India.</div>
+                  </div>
+      
+                  <div class="feature">
+                      <div class="feature-icon">📰</div>
+                      <div class="feature-title">HOT FASHION NEWS</div>
+                      <div class="feature-text">Join us for fashion news.</div>
+                  </div>
+      
+                  <div class="feature">
+                      <div class="feature-icon">💬</div>
+                      <div class="feature-title">FLEXIBLE COMMUNICATION</div>
+                      <div class="feature-text">If you have any query or any suggestion, Feel free to reach us.</div>
+                  </div>
+      
+                  <div class="feature">
+                      <div class="feature-icon">📱</div>
+                      <div class="feature-title">WE'RE ON WHATSAPP 24/7</div>
+                      <div class="feature-text">
+                          <a href="https://wa.me/916200146898" class="whatsapp-button">
+                              Whatsapp - +916200146898
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </body>
+      </html>
+       <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and iso mobile phone.</p>
+              <div class="app-logo">
+                <img src="https://i.postimg.cc/BbYJfn1q/3c4o3m6l.png" alt="" />
+                <img src="https://i.postimg.cc/bJbKRHPc/le66m6uw.png" alt="" />
+              </div>
+            </div>
+      
+            <div class="footer-col-2">
+              <img src="https://i.postimg.cc/J4H3Ttv8/Screenshot-2025-01-04-230524.png" alt="" />
+              <p>
+                Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                Sports Accessible to the Many.
+              </p>
+            </div>
+      
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>About</li>
+                <li>Return Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+      
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright &copy; 2024 - Shoes Store</p>
+        </div>
+      </div>
+      <!-- js for toggle menu -->
+      <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = '0px';
+      
+        function menutoggle() {
+          if (MenuItems.style.maxHeight == '0px') {
+            MenuItems.style.maxHeight = '200px';
+          } else {
+            MenuItems.style.maxHeight = '0px';
+          }
+        }
+      </script>
+      <!--------------js for product gallery-------->
+      
+      <script>
+        var productimg = document.getElementById("productimg")
+        var Smallimg = document.getElementsByClassName("small-img")
+          Smallimg[0].onclick = function()
+         {
+          productimg.src = Smallimg[0].src;
+         }
+         Smallimg[1].onclick = function()
+         {
+          productimg.src = Smallimg[1].src;
+         }
+         Smallimg[2].onclick = function()
+         {
+          productimg.src = Smallimg[2].src;
+         }
+         Smallimg[3].onclick = function()
+         {
+          productimg.src = Smallimg[3].src;
+         }
+      </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

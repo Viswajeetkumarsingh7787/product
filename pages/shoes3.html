@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop your favourite Footwear on maximum discount</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/product/index.html"><img src="https://i.postimg.cc/J4H3Ttv8/Screenshot-2025-01-04-230524.png" alt="SHOES Store" width="180px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="/product/index.html">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+          <img src="https:///i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+      <!-- nav end -->
+<!------single product -------->
+       <div class="small-container single-product">
+        <div class="row">
+          <div class="col-2">
+            <img src="https://i.postimg.cc/nrXNFcdh/k5ixc61x.png" width="100%" id="productimg">
+
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img src="https://i.postimg.cc/nrXNFcdh/k5ixc61x.png" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="https://i.postimg.cc/V6G3PbWh/hyh7uo3t.png" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="https://i.postimg.cc/vmvJXKgb/5jkejrx9.png" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="https://i.postimg.cc/DZytNcLs/3fttbdxl.png" width="100%" class="small-img">
+            </div>
+          </div>
+        </div>
+          <div class="col-2">
+            <p>Home / shoes</p>
+            <h1>Sports shoes for GYM, Exercise and For daily wear</h1>
+            <h4>799.00</h4>
+            <select>
+              <option>Select Size</option>
+              <option>UL6</option>
+              <option>UL7</option>
+              <option>UL8</option>
+              <option>UL9</option>
+              <option>UL10</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+            <h3>product Details <i class="fas fa-indent"></i></h3>
+            <br>
+            <p>Purpose-built for high intensity workouts, this lightweight low boot helps you push through another rep and smash your personal best. Its SOFTFOAM+ sockliner cushions every stride while strategic rubber zones grant multi-surface traction</p>
+          </div>
+        </div>
+       </div>
+    <!----title-->
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and iso mobile phone.</p>
+              <div class="app-logo">
+                <img src="https://i.postimg.cc/BbYJfn1q/3c4o3m6l.png" alt="" />
+                <img src="https://i.postimg.cc/bJbKRHPc/le66m6uw.png" alt="" />
+              </div>
+            </div>
+      
+            <div class="footer-col-2">
+              <img src="https://i.postimg.cc/J4H3Ttv8/Screenshot-2025-01-04-230524.png" alt="" />
+              <p>
+                Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                Sports Accessible to the Many.
+              </p>
+            </div>
+      
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>About</li>
+                <li>Return Policy</li>
+                <li>Terms & conditions</li>
+              </ul>
+            </div>
+      
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright &copy; 2024 - Shoes Store</p>
+        </div>
+      </div>
+      
+      <!-- js for toggle menu -->
+      <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = '0px';
+      
+        function menutoggle() {
+          if (MenuItems.style.maxHeight == '0px') {
+            MenuItems.style.maxHeight = '200px';
+          } else {
+            MenuItems.style.maxHeight = '0px';
+          }
+        }
+      </script>
+      <!--------------js for product gallery-------->
+
+      <script>
+        var productimg = document.getElementById("productimg")
+        var Smallimg = document.getElementsByClassName("small-img")
+          Smallimg[0].onclick = function()
+         {
+          productimg.src = Smallimg[0].src;
+         }
+         Smallimg[1].onclick = function()
+         {
+          productimg.src = Smallimg[1].src;
+         }
+         Smallimg[2].onclick = function()
+         {
+          productimg.src = Smallimg[2].src;
+         }
+         Smallimg[3].onclick = function()
+         {
+          productimg.src = Smallimg[3].src;
+         }
+      </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
