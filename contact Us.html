@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: skyblue;
+            color: red;
+            padding-top: 50px;
+            min-height: 100px;
+            border-bottom: #e8491d 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .team-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .team-member {
+            background: #fff;
+            width: 300px;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .mission {
+            background: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            margin: 10px;
+            text-align: left;
+        }
+        .footer-bottom {
+            background: #2c3840;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .social-icons a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .team-member {
+                width: 100%;
+            }
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-section {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us </h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="mission">
+            <h1>Our Mission</h1>
+            <p>We are dedicated to delivering innovative solutions that make a difference. Our team is committed to excellence, creativity, and pushing the boundaries of what's possible.</p>
+        </div>
+
+        <div class="team-section">
+            <div class="team-member">
+                <img src="/api/placeholder/200/200" alt="Team Member 1">
+                <h3>VIKASH</h3>
+                <p>Founder & CEO</p>
+                <p>Passionate about technology and innovation, vijay leads our team with vision and integrity.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="/api/placeholder/200/200" alt="Team Member 2">
+                <h3>VANSH</h3>
+                <p>Chief Technology Officer</p>
+                <p>An expert in cutting-edge technologies, VANSH drives our technical strategy.</p>
+            </div>
+            <div class="team-member">
+                <img src="/api/placeholder/200/200" alt="Team Member 2">
+                <h3>Viswajeet</h3>
+                <p>Creative Director</p>
+                <p>An expert in cutting-edge technologies, VANSH drives our technical strategy.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="/api/placeholder/200/200" alt="Team Member 3">
+                <h3>VIJAY</h2>
+                <p>Team Leader</p>
+                <p>vijay brings creativity and design expertise to everything we do.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="/api/placeholder/200/200" alt="Team Member 3">
+                <h3>VIVEK PANDEY</h2>
+                <p>production manager </p>
+                <p>vivek brings creativity and design add all the required cost for the company redstore.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h1>Contact Us</h4>
+                <p>Email: Shoes store@its.com</p>
+                <p>Phone: +91 6200146898</p>
+                <p>Address: 123 Innovation Way, Tech City, TC 12345</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#" style="color: #ffffff;">Home</a></p>
+                <p><a href="#" style="color: #ffffff;">Services</a></p>
+                <p><a href="#" style="color: #ffffff;">Portfolio</a></p>
+                <p><a href="#" style="color: #ffffff;">Careers</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Our Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

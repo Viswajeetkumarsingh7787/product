@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>/* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #7f7484, #798BF8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Container */
+        .container {
+            background-color: #d1e7e5;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        /* Form Styles */
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .signup-form h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .signup-form label {
+            font-size: 14px;
+            color: #333;
+        }
+        
+        
+        .signup-form input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        
+        .signup-form input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+        
+        .submit-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .signup-form {
+            text-align: center;
+            font-size: 14px;
+            color: #3756a6;
+        }
+        
+        .signin-text a {
+            color: #007BFF;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+
+        .textbox input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 2px solid #455652;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        
+        .signin-text a:hover {
+           text-decoration: underline;
+        }</style>
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form">
+            <h2>Create an Account</h2>
+            <div class="textbox">
+            <h3 for="username">Username</h3>
+            <input type="text" placeholder="Enter your username" id="username" name="username" required>
+</div>
+<div class="textbox">
+            <h3 for="email">Email</h3>
+            <input type="email" placeholder="Enter your email" id="email" name="email" required>
+</div>            <div class="textbox">
+            <h3 for="password">Password</h3>
+            <input type="password" placeholder="Enter password" id="password" name="password" required>
+</div>            <div class="textbox">
+            <h3 for="confirm-password">Confirm Password</h3>
+            <input type="password" placeholder="Enter password" id="confirm-password" name="confirm-password" required>
+</div>  
+            <button type="submit" class="submit-btn">Sign Up</button>
+
+            <p class="signin-text">Already have an account? <a href="login.html">Sign In</a></p>
+        </form>
+    </div>
+</body>
+</html>
